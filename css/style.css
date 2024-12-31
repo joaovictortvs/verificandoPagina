@@ -1,71 +1,98 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'Sriracha';
-    src: url(../Sriracha/Sriracha-Regular.ttf);
-}
+    font-family: 'Font Titulo';
+    src: url(../font/fonts.otf);
+};
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body, html{
     width: 100vw;
     height: 100vh;
     background-color: black;
+    overflow-x: hidden;
+    color: white;
 }
 
-@keyframes animation{
-    from{
-        left:0%; 
-        font-size: 2em;
-        color: white;
-        opacity: 0;
-    }
-    to{
-        left:50%; 
-        font-size: 2.5em;
-        color: white;
-        opacity: 1;
-    }
-}
-
-@keyframes animation2{
-    from{
-        opacity: 1;
-        top: 0%;
-    }
-    to{
-        opacity: 0;
-        top: -10%;
-
-    }
-}
-
-#container-all{
-    width: 100%;
-    height: 100%;
+.container{
+    max-height: 2000px;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    color: white;
-    overflow: auto;
+    overflow-x: auto;
 }
 
-.animation{
-    text-shadow: 1px 1px 1px white;
-    margin: 10px 0px;
-    text-align: center;
-    width: 100%;
-    font-size: 2.5em;
-    position: absolute;
-    left: 50%;
-    top: 0%;
-    z-index: 10;
-    color: white;
-    transform: translate(-50%);
-    animation: animation 1.4s ease-in-out, animation2 2s ease-in-out 4s;
-    animation-fill-mode: forwards;
+.container > img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+section div.text-content{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1.2em;
+}
+
+section div.text-content h1{
+    font-size: 2.8em;
+    font-family: 'Font Titulo';
+    font-weight: lighter;
+}
+
+section div.text-content p{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    width: 90%;
+    line-height: 1.5em;
+}
+
+section div.image-content{
+    padding: 10px;
+}
+
+section div.image-content img{
+    border-radius: 10px;
+}
+
+section div#image-content_2 img{
+    width: 500px;
+    height: auto;
+}
+
+section div#text-content_2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+section div#text-content_2 p, section div#text-content_2 h1{
+    margin-left: 10px;
+    width: 95%;
+    flex-flow: wrap;
+}
+
+section div#text-content2 div#texto1{
+    margin-top: 5px;
+}
+
+section div#text-content_2 div{
+    margin-bottom: 40px;
 }

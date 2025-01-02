@@ -23,7 +23,6 @@ div.text-content{
     overflow-wrap: break-word; /* Quebra palavras longas */
     word-wrap: break-word; /* Compatibilidade com navegadores antigos */
     line-height: 1.5; /* Mantém uma boa altura entre as linhas */
-    text-align: justify;
 }
 
 div.text-content p , div.text-content h1{
@@ -37,11 +36,16 @@ div.text-content p{
 }
 
 div.text-content h1{
+    line-height: normal;
     font-size: 2.5em;
 }
 
 div.image-content img{
     width: 100%;
+}
+
+section div#text-content_1 p{
+    text-align: justify;
 }
 
 section div#text-content_2 div{
@@ -50,4 +54,9 @@ section div#text-content_2 div{
 
 section div#image-content_2{
     align-self: flex-start;
+    
+}
+
+section div#image-content_2 img{
+    display: none;
 }

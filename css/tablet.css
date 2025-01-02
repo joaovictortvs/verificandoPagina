@@ -1,2 +1,21 @@
 @charset "UTF-8";
 
+section div.text-content{
+    font-size: 1em;
+}
+
+section div.text-content h1{
+    font-size: 2.6em;
+}
+
+section div.image-content{
+    padding: 0px;
+}
+
+section div.image-content img{
+    width: 300px;
+}
+
+section div#image-content_2 img{
+    max-width: 300px;
+}

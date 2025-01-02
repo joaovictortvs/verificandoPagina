@@ -13,7 +13,7 @@
 }
 
 body, html{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: black;
     overflow-x: hidden;
@@ -96,4 +96,24 @@ section div#text-content2 div#texto1{
 
 section div#text-content_2 div{
     padding: 20px 0px;
+}
+
+section#trabalhos{
+    flex-flow: column;
+}
+
+section#trabalhos h2{
+   font-size: 2em;
+}
+
+section#trabalhos > div{
+    display: flex;
+}
+
+.trabalhosExemplo{
+    margin: 5px;
+}
+
+section#trabalhos img{
+    width: 280px;
 }

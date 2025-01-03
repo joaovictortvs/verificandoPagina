@@ -9,6 +9,10 @@ section{
     align-items: center;
 }
 
+section > div{
+    align-items: center;
+}
+
 #section_2{
     display: flex;
     flex-flow: column-reverse wrap;
@@ -19,29 +23,30 @@ section div#text-content_2{
 }
 
 div.text-content{
-    hyphens: auto; /* Habilita hifenização automática */
-    overflow-wrap: break-word; /* Quebra palavras longas */
-    word-wrap: break-word; /* Compatibilidade com navegadores antigos */
-    line-height: 1.5; /* Mantém uma boa altura entre as linhas */
+    hyphens: auto; 
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    line-height: 1.5; 
 }
 
-div.text-content p , div.text-content h1{
-    margin-left: 10px;
-}
+/* div.text-content p , div.text-content h1{
+    /* margin-left: 10px; 
+} */
 
 div.text-content p{
-    text-align: justify;
+    text-align: justify !important;
     line-height: 0.8em;
     font-size: 1em;
 }
 
 div.text-content h1{
+    text-align: center;
     line-height: normal;
     font-size: 2.5em;
 }
 
 div.image-content img{
-    width: 100%;
+    width: 380px;
 }
 
 section div#text-content_1 p{
@@ -49,14 +54,17 @@ section div#text-content_1 p{
 }
 
 section div#text-content_2 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 5px 0px;
 }
 
-section div#image-content_2{
-    align-self: flex-start;
-    
-}
 
 section div#image-content_2 img{
     display: none;
+}
+
+section#trabalhos img{
+    width: 200px;
 }

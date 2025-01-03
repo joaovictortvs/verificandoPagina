@@ -13,9 +13,13 @@ section div.image-content{
 }
 
 section div.image-content img{
-    width: 300px;
+    width: 320px;
 }
 
 section div#image-content_2 img{
     max-width: 300px;
+}
+
+section#trabalhos img{
+    width: 250px;
 }
